@@ -14,7 +14,7 @@
             <h2 class="text-xl font-semibold text-black">{{ editingId ? 'Modifiko Veturën' : 'Posto Veturë të Re' }}</h2>
             <button v-if="editingId" @click="cancelEdit" type="button" class="text-sm text-gray-500 hover:text-black">Anulo Modifikimin</button>
           </div>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div><label class="block text-sm font-medium mb-1">Brendi</label><input v-model="form.brand" type="text" class="w-full p-2 border rounded-lg" required></div>
             <div><label class="block text-sm font-medium mb-1">Modeli</label><input v-model="form.model" type="text" class="w-full p-2 border rounded-lg" required></div>
             <div><label class="block text-sm font-medium mb-1">Viti</label><input v-model="form.year" type="number" class="w-full p-2 border rounded-lg" required></div>
